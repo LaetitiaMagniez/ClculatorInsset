@@ -31,11 +31,18 @@ public class Menu extends Composite {
      */
     @UiField
     public MenuItem pourcentage;
+    
     /**
      * Menu : accueil
      */
     @UiField
     public MenuItem romain;
+    
+    /**
+     * Menu : accueil
+     */
+    @UiField
+    public MenuItem diviser;
 
     interface MenuUiBinder extends UiBinder<HTMLPanel, Menu> {
     }
@@ -70,6 +77,14 @@ public class Menu extends Composite {
             public void execute() {
 
                 History.newItem("roman", true);
+            }
+        });
+        diviser.setScheduledCommand(new Scheduler.ScheduledCommand() {
+
+            @Override
+            public void execute() {
+
+                History.newItem("diviser", true);
             }
         });
     }

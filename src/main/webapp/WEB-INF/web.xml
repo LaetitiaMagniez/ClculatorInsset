@@ -6,6 +6,8 @@
 <web-app>
 
   <!-- Servlets -->
+  
+  <!-- Exemple-->
   <servlet>
     <servlet-name>exempleServlet</servlet-name>
     <servlet-class>org.insset.server.ExempleServiceImpl</servlet-class>
@@ -16,7 +18,7 @@
     <url-pattern>/calculatorInsset/exemple</url-pattern>
   </servlet-mapping>
 
-
+   <!-- Roman-->
   <servlet>
     <servlet-name>romanConvert</servlet-name>
     <servlet-class>org.insset.server.RomanConverterServiceImpl</servlet-class>
@@ -27,7 +29,29 @@
     <url-pattern>/calculatorInsset/romanConvert</url-pattern>
   </servlet-mapping>
   
-  <!-- Add your servlet -->
+  <!-- Diviser-->
+  <servlet>
+    <servlet-name>Diviser</servlet-name>
+    <servlet-class>org.insset.server.DiviserServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Diviser</servlet-name>
+    <url-pattern>/calculatorInsset/Diviser</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Pourcentage-->
+  <servlet>
+    <servlet-name>Pourcentage</servlet-name>
+    <servlet-class>org.insset.server.PourcentageServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Pourcentage</servlet-name>
+    <url-pattern>/calculatorInsset/Pourcentage</url-pattern>
+  </servlet-mapping>
+  
+  
   
   <!-- Default page to serve -->
   <welcome-file-list>
